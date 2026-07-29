@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تسک دوره جاوااسکریپت</title>
+  <link rel="stylesheet" href="./styles/index.css" />
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <link rel="stylesheet" href="/src/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <form class="form-load" action="">
+      <input type="text" name="" id="search-trx" placeholder="">
+      <button id="load-trx">بارگذاری تراکنش ها</button>
+
+    </form>
+    <div class="box-list">
+      <table>
+        <thead class="th-table">
+          <tr>
+            <th style="border-top-right-radius: 2rem;">شناسه</th>
+            <th>نوع تراکنش</th>
+            <th id="sortPrice"><span>مبلغ</span> <i class="fa fa-chevron-down iconPrice"></i></th>
+            <th>شماره پیگیری</th>
+            <th id="sortDate" style="border-top-left-radius: 2rem;"><span>تاریخ</span> <i
+                class="fa fa-chevron-down iconDate"></i></th>
+          </tr>
+
+        </thead>
+
+        <tbody id="list-trx">
+        </tbody>
+      </table>
+      <div class="empty-trx">
+        رکوردی یافت نشد
+      </div>
+    </div>
+  </div>
+
+
+  <script src="./js/index.js" type="module"></script>
+</body>
+
+</html>
